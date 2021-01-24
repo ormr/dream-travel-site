@@ -1,0 +1,33 @@
+.orange-button {
+  transition: 0.3s;
+  padding: 12px 34px 12px 60px;
+  color: $orange;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+    width: 12px;
+    background: url('/src/assets/icons/arrow-small.svg') center / contain
+      no-repeat;
+  }
+
+  &:hover {
+    background: $orange;
+    color: #fff;
+
+    &:before {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

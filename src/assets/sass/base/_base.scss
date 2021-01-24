@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  box-sizing: border-box;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1170px !important;
+  }
+}

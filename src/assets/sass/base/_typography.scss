@@ -1,0 +1,48 @@
+body {
+  color: $dark;
+  font-family: $text-font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+// Headings
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
