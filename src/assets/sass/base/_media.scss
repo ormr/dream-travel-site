@@ -175,3 +175,9 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (max-height: 736px) {
+  .header {
+    min-height: 736px;
+  }
+}
