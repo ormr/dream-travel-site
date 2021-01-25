@@ -115,11 +115,11 @@
     align-items: center;
     height: 50px;
     font-size: 18px;
-    color: $orange;
+    color: $dark;
 
     &:hover {
       text-decoration: none;
-      background: #e4e4e4;
+      background: rgba($orange, 0.2);
     }
   }
 }
@@ -128,6 +128,6 @@
   padding: 15px 0;
   justify-content: center;
   .auth__link {
-    color: $orange;
+    color: $dark;
   }
 }
