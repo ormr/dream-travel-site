@@ -4,6 +4,7 @@ import 'swiper/swiper-bundle.css';
 
 Swiper.use([Navigation, Pagination]);
 
+// Connect sliders
 window.addEventListener(
   'load',
   () => {
@@ -100,6 +101,7 @@ window.addEventListener(
   false
 );
 
+// Mobile sidebar
 const toggleMobileNav = () => {
   const mobileNav = document.querySelector('.mobile-nav');
   const mobileNavBackground = document.querySelector('.mobile-background-nav');
@@ -134,3 +136,41 @@ const toggleMobileNav = () => {
 document
   .getElementById('burger-menu')
   .addEventListener('click', toggleMobileNav);
+
+// Countdown timer
+const dateDistance = (date) => {
+  date = Date.parse(date);
+
+  const now = new Date().getTime();
+
+  const distance = date - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  return {
+    distance,
+    days,
+    hours,
+    minutes,
+    seconds,
+  };
+};
+
+const daysElement = document.getElementById('days');
+const hoursElement = document.getElementById('hours');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
+
+setInterval(() => {
+  const { days, hours, minutes, seconds } = dateDistance('10-10-2021');
+
+  daysElement.innerHTML = days;
+  hoursElement.innerHTML = hours;
+  minutesElement.innerHTML = minutes;
+  secondsElement.innerHTML = seconds;
+}, 1000);

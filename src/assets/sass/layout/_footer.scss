@@ -1,0 +1,109 @@
+.footer {
+  padding: 120px 0 0;
+  background: url('/src/assets/images/footer-bac.webp') center / cover no-repeat;
+
+  &__body {
+    padding-bottom: 110px;
+  }
+
+  .footer-info {
+    &__logo {
+      padding-bottom: 45px;
+    }
+
+    &__list {
+      padding-bottom: 50px;
+    }
+
+    &__item {
+      padding-bottom: 25px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &__link {
+      color: #bababa;
+
+      &:hover {
+        cursor: pointer;
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-nav {
+    &__title {
+      position: relative;
+      color: #fff;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+      margin-bottom: 40px;
+
+      &:after {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 1px;
+        background-color: $yellow;
+      }
+    }
+
+    &__item {
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &__link {
+      color: #bababa;
+
+      &:hover {
+        cursor: pointer;
+        color: $yellow;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footerbar {
+    border-top: 1px solid #273243;
+    padding: 50px 0;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    &__copyright {
+      flex: 50%;
+    }
+
+    &__nav {
+      flex: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__link {
+      color: #bababa;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+        color: $yellow;
+        text-decoration: none;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

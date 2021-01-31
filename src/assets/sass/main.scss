@@ -9,8 +9,10 @@
 
 // Layouts
 @import 'layout/header';
+@import 'layout/footer';
 
 // Components
+@import 'components/article-item';
 @import 'components/button';
 @import 'components/star-rating';
 @import 'components/input-form';
