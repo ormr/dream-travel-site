@@ -50,6 +50,7 @@ window.addEventListener(
       slidesPerView: 'auto',
       spaceBetween: 30,
       slidesPerGroup: 1,
+      centeredSlides: true,
       loop: true,
       pagination: {
         el: '.honeymoon-offer-slider__pagination',

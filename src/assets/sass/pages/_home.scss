@@ -131,16 +131,16 @@
     // }
 
     &_glenfinnan-background {
-      background: url('/src/assets/images/Glenfinnan.jpg') center / cover
+      background: url('/src/assets/images/Glenfinnan.webp') center / cover
         no-repeat;
     }
 
     &_banff-background {
-      background: url('/src/assets/images/Banff.jpg') center / cover no-repeat;
+      background: url('/src/assets/images/Banff.webp') center / cover no-repeat;
     }
 
     &_norway-background {
-      background: url('/src/assets/images/norway.jpg') center / cover no-repeat;
+      background: url('/src/assets/images/norway.webp') center / cover no-repeat;
     }
   }
 
@@ -248,15 +248,15 @@
       align-items: flex-end;
       max-height: 585px !important;
       &.norway-background {
-        background: url('/src/assets/images/norway1.jpg') center / cover
+        background: url('/src/assets/images/norway1.webp') center / cover
           no-repeat;
       }
       &.canada-background {
-        background: url('/src/assets/images/canada.jpg') center / cover
+        background: url('/src/assets/images/canada.webp') center / cover
           no-repeat;
       }
       &.lake-and-mountains-background {
-        background: url('/src/assets/images/lake-and-mountains.jpg') center /
+        background: url('/src/assets/images/lake-and-mountains.webp') center /
           cover no-repeat;
       }
     }
@@ -589,7 +589,7 @@
   display: flex;
   align-items: center;
   height: 700px;
-  background: url('/src/assets/images/mountain-road.jpg') center / cover
+  background: url('/src/assets/images/mountain-road.webp') center / cover
     no-repeat;
 
   &__special {
@@ -823,7 +823,7 @@
   color: #fff;
   &__body {
     padding-top: 80px;
-    background: url('/src/assets/images/switzerland-village.jpg') center / cover
+    background: url('/src/assets/images/switzerland-village.webp') center / cover
       no-repeat;
     width: 100%;
     height: 460px;
@@ -852,9 +852,25 @@
     justify-content: center;
 
     iframe {
+      position: relative;
       max-width: 560px;
       width: 100%;
       height: 330px;
+
+      img,span{
+        position:absolute;
+        width:100%;
+        top:0;
+        bottom:0;
+        margin:auto
+      }
+      span{
+        height:1.5em;
+        text-align:center;
+        font:48px/1.5 sans-serif;
+        color:white;
+        text-shadow:0 0 0.5em black;
+      }
     }
   }
 }
@@ -965,7 +981,7 @@
 
 .footer {
   padding: 120px 0 0;
-  background: url('/src/assets/images/footer-bac.jpg') center / cover no-repeat;
+  background: url('/src/assets/images/footer-bac.webp') center / cover no-repeat;
 
   &__body {
     padding-bottom: 110px;
@@ -1045,9 +1061,20 @@
     display: flex;
     justify-content: space-between;
 
+    &__copyright {
+      flex: 50%;
+    }
+
+    &__nav {
+      flex: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     &__link {
       color: #bababa;
-      padding-right: 48px;
+      text-align: center;
 
       &:hover {
         cursor: pointer;
