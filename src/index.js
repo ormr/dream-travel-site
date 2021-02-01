@@ -139,7 +139,7 @@ document
 
 // Countdown timer
 const dateDistance = (date) => {
-  date = Date.parse(date);
+  date = Number(Date.parse(date));
 
   const now = new Date().getTime();
 
@@ -167,7 +167,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
 setInterval(() => {
-  const { days, hours, minutes, seconds } = dateDistance('10-10-2021');
+  const { days, hours, minutes, seconds } = dateDistance('10/10/2021');
 
   daysElement.innerHTML = days;
   hoursElement.innerHTML = hours;
