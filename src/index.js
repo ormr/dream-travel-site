@@ -58,7 +58,7 @@ window.addEventListener(
         clickable: true,
       },
       breakpoints: {
-        768: {
+        992: {
           autoHeight: 'true',
           slidesPerView: 'auto',
           spaceBetween: 30,
